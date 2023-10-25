@@ -10,7 +10,7 @@
 
     <link href="../CSS/register.css" rel="stylesheet">
 
-    <title>Clínica Benessere | Cadastro de Médico</title>
+    <title>Clínica Benessere | Prescrição</title>
 </head>
 
 <body class="bg-light">
@@ -18,7 +18,7 @@
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt=""
                 width="72" height="72">
-            <h2>Cadastro de Médico</h2>
+            <h2>Prescrição</h2>
             <p class="lead">
                 Otimize a experiência ao preencher os dados com rapidez, garantindo um acesso contínuo e personalizado ao sistema, desfrutando de todas as funcionalidades automatizadas que facilitam o dia a dia.
             </p>
@@ -29,82 +29,54 @@
                 <h4 class="mb-3">Dados pessoais</h4>
                 <form class="needs-validation" novalidate>
                     <div class="mb-3">
-                        <label for="fullname">Nome completo <span class="text-muted">(Obrigatório)</span></label>
-                        <input type="text" class="form-control" id="fullname" placeholder="Informe o nome completo" value="" required>
-                        <div class="invalid-feedback">
-                            É necessário um nome válido.
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="matricula">CRM <span class="text-muted">(Obrigatório)</span></label>
-                            <input type="text" class="form-control" id="matricula" placeholder="Informe o CRM" value="" required>
-                            <div class="invalid-feedback">
-                                É necessário uma CRM válido.
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="cpf">CPF <span class="text-muted">(Obrigatório)</span></label>
-                            <input type="text" class="form-control" id="cpf" placeholder="Informe o CPF sem pontuação" value="" required>
-                            <div class="invalid-feedback">
-                                É necessário um CPF válido.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label>Gênero <span class="text-muted">(Obrigatório)</span></label>
-                        <div class="custom-control custom-radio">
-                            <input id="masculino" name="genero" type="radio" class="custom-control-input" checked required>
-                            <label class="custom-control-label" for="mascilino">Masculino</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="femino" name="genero" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="feminino">Feminino</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="outro" name="genero" type="radio" class="custom-control-input" required>
-                            <label class="custom-control-label" for="outro">Outro</label>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="especialidade">Especialidade</label>
-                        <select class="custom-select d-block w-100" id="especialidade" required>
+                        <label for="paciente">Paciente <span class="text-muted">(Obrigatório)</span></label>
+                        <select class="custom-select d-block w-100" id="paciente" required>
                             <option value="">Selecione...</option>
-                            <option value="">Dermatologista</option>
-                            <option value="">Ginecologista</option>
+                            <option value="">Nomes aqui</option>
                         </select>
                         <div class="invalid-feedback">
-                            É necessária uma especialidade válida.
+                            É necessário um paciente válido.
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label for="email">Email <span class="text-muted">(Obrigatório)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
+                        <label for="medico">Médico <span class="text-muted">(Obrigatório)</span></label>
+                        <select class="custom-select d-block w-100" id="medico" required>
+                            <option value="">Selecione...</option>
+                            <option value="">Nomes aqui</option>
+                        </select>
                         <div class="invalid-feedback">
-                            Por favor insira um endereço de e-mail válido.
+                            É necessário um medico válido.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="consulta">Consulta <span class="text-muted">(Obrigatório)</span></label>
+                        <select class="custom-select d-block w-100" id="consulta" required>
+                            <option value="">Selecione...</option>
+                            <option value="">Nomes aqui</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            É necessário um consulta válido.
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-md-12 mb-3">
-                            <label for="senha">Senha <span class="text-muted">(Obrigatório)</span></label>
-                            <input type="password" class="form-control" id="senha" placeholder="Senha de até 10 dígitos">
+                            <label for="detalhes">Detalhes <span class="text-muted">(Obrigatório)</span></label>
+                            <input type="text" class="form-control" id="detalhes" placeholder="Detalhe a solicitação">
                             <div class="invalid-feedback">
-                                Por favor insira uma senha válida.
+                                Por favor insira uma descrição válida.
                             </div>
                         </div>
                     </div>
 
                     <hr class="mb-4">
 
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Confirmar cadastro</button>
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Confirmar prescrição</button>
                 </form>
                 <div class="text-center mt-4">
-                    <a href="../index.html">Voltar para a página anterior</a>
+                    <a href="">Voltar para a página anterior</a>
                 </div>
             </div>
         </div>
