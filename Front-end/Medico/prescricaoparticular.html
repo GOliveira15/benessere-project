@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="../CSS/register.css" rel="stylesheet">
+
+    <title>Clínica Benessere | Prescrição Particular</title>
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="../../Recursos/prescricao.png" alt=""
+                width="72" height="72">
+            <h2>Prescrição Particular</h2>
+            <p class="lead">
+                Otimize a experiência ao preencher os dados com rapidez, garantindo um acesso contínuo e personalizado ao sistema, desfrutando de todas as funcionalidades automatizadas que facilitam o dia a dia.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 order-md-1">
+                <h4 class="mb-3">Dados pessoais</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="paciente">Paciente <span class="text-muted">(Obrigatório)</span></label>
+                        <select class="custom-select d-block w-100" id="paciente" required>
+                            <option value="">Selecione...</option>
+                            <option value="">Nomes aqui</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            É necessário um paciente válido.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="medico">Médico <span class="text-muted">(Obrigatório)</span></label>
+                        <select class="custom-select d-block w-100" id="medico" required>
+                            <option value="">Selecione...</option>
+                            <option value="">Nomes aqui</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            É necessário um medico válido.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="consulta">Consulta <span class="text-muted">(Obrigatório)</span></label>
+                        <select class="custom-select d-block w-100" id="consulta" required>
+                            <option value="">Selecione...</option>
+                            <option value="">Nomes aqui</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            É necessário um consulta válido.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label for="detalhes">Detalhes <span class="text-muted">(Obrigatório)</span></label>
+                            <input type="text" class="form-control" id="detalhes" placeholder="Detalhe a solicitação">
+                            <div class="invalid-feedback">
+                                Por favor insira uma descrição válida.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Confirmar prescrição</button>
+                </form>
+                <div class="text-center mt-4">
+                    <a href="">Voltar para a página anterior</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 2023 Clínica Benessere</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacidade</a></li>
+                <li class="list-inline-item"><a href="#">Termos</a></li>
+                <li class="list-inline-item"><a href="#">Suporte</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
