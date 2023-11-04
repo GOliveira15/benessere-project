@@ -14,13 +14,12 @@
 </head>
 
 <body class="bg-light">
-    <div class="container">
+    <div class="container-fluid">
         <div class="py-5 text-center">
             <img class="d-block mx-auto mb-4" src="../../Recursos/relatorio.png" alt="" width="72" height="72">
             <h2>Relatórios</h2>
             <p class="lead">
-                Otimize a experiência ao preencher os dados com rapidez, garantindo um acesso contínuo e personalizado
-                ao sistema, desfrutando de todas as funcionalidades automatizadas que facilitam o dia a dia.
+                Explore nosso relatório semanal de operações para acompanhar o compromisso contínuo da nossa clínica de saúde em fornecer cuidados de alta qualidade. Mantenha-se atualizado sobre nossas atividades e realizações, enquanto trabalhamos incansavelmente para promover a saúde e bem-estar.
             </p>
         </div>
 
@@ -75,18 +74,14 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">Código</th>
-                                    <th scope="col">Nome</th>
                                     <th scope="col">Tipo</th>
-                                    <th scope="col">Fornecedor</th>
+                                    <th scope="col">Quantidade</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Unimed</td>
-                                    <td>Cooperativo</td>
-                                    <td>Unimed</td>
+                                    <td>Exame de Sangue</td>
+                                    <td>1</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -102,18 +97,14 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">Código</th>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col">Tipo</th>
-                                    <th scope="col">Fornecedor</th>
+                                    <th scope="col">Plano</th>
+                                    <th scope="col">Quantidade</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
                                     <td>Unimed</td>
-                                    <td>Cooperativo</td>
-                                    <td>Unimed</td>
+                                    <td>1</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -189,9 +180,9 @@
         var myChart = new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                labels: ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira"],
                 datasets: [{
-                    data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                    data: [0, 1, 24003, 0, 0],
                     lineTension: 0,
                     backgroundColor: 'transparent',
                     borderColor: '#007bff',
