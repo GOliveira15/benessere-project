@@ -12,57 +12,43 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="../../Recursos/favicon.png">
 
-    <title>Clínica Benessere | Pacientes</title>
+    <title>Clínica Benessere | Gerenciar status</title>
 </head>
 
 <body class="bg-light">
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="../../Recursos/paciente.png" alt="" width="72" height="72">
-            <h2>Pacientes</h2>
+            <img class="d-block mx-auto mb-4" src="../../Recursos/planodesaude.png" alt=""
+                width="72" height="72">
+            <h2>Gerenciar status</h2>
             <p class="lead">
-                Otimize a experiência ao preencher os dados com rapidez, garantindo um acesso contínuo e personalizado
-                ao sistema, desfrutando de todas as funcionalidades automatizadas que facilitam o dia a dia.
+                Otimize a experiência ao preencher os dados com rapidez, garantindo um acesso contínuo e personalizado ao sistema, desfrutando de todas as funcionalidades automatizadas que facilitam o dia a dia.
             </p>
         </div>
 
         <div class="row">
             <div class="col-md-12 order-md-1">
-                <div class="row">
-                    <div class="col-md-10 mb-3">
-                        <h4 class="mb-3">Paciente</h4>
+                <h4 class="mb-3">Gerenciar status</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="status">Status</label>
+                        <select class="custom-select d-block w-100" id="status" required>
+                            <option value="">Selecione...</option>
+                            <option value="">Aprovado</option>
+                            <option value="">Reprovado</option>
+                            <option value="">Análise</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            É necessário um status válido.
+                        </div>
                     </div>
-                </div>
 
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Código</th>
-                            <th scope="col">Nome Completo</th>
-                            <th scope="col">CPF</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Gênero</th>
-                            <th scope="col">Endereço</th>
-                            <th scope="col">E-mail</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Maria das Graças</td>
-                            <td>00011122233</td>
-                            <td>16991707070</td>
-                            <td>F</td>
-                            <td>Rua dos Amores, 61, Jardim Paixão, São Paulo/SP</td>
-                            <td>mariadasgracas@gmail.com</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <hr class="mb-4">
 
-                <hr class="mb-4 mt-5">
-
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Confirmar status</button>
+                </form>
                 <div class="text-center mt-4">
-                    <a href="../Funcionario/funcionario.html">Voltar para a página anterior</a>
+                    <a href="../Funcionario/veragendamentos.html">Voltar para a página anterior</a>
                 </div>
             </div>
         </div>
